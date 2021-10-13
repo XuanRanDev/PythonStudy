@@ -11,14 +11,13 @@ bmi = weight / (height * height)
 
 print("你的BMI指数为：" + str(bmi))
 
-if  bmi < 18.5:
+if bmi < 18.5:
     print("你的体重太轻")
-if  bmi >= 18.5 and bmi < 24.9:
+if 18.5 <= bmi < 24.9:
     print("体重正常")
-if  bmi > 25 and bmi <= 29.9:
+if 25 < bmi <= 29.9:
     print("肥胖")
-if  bmi >= 30:
+if bmi >= 30:
     print("肥胖")
 
 #   程序结束运行
-
