@@ -31,6 +31,74 @@ def ListAddListTest():
     print(new_v)
 
 
+def ListElementCheckTest():
+    ls = ["风萧萧兮易水寒", "壮士一去不复返"]
+    for i in ls:
+        if i == "水":
+            print("发现了水")
+    else:
+        print("没有水")
+
+    if "风萧萧兮易水寒" in ls:
+        print("Find out")
+    else:
+        print("Not find")
+
+
+def ListAppendTest():
+    girls = ['杨超越']
+    girls.append('李冰燕')
+    print(girls)
+
+
+def ListExtendsTest():
+    """List相加"""
+    girls = ['杨超越']
+    girls2 = ['李冰燕']
+    girls3 = girls + girls2
+    print(girls3)
+
+
+def ListInsertTest():
+    """List插入测试"""
+    girls = ['李冰燕']
+    girls.insert(0, 'XuanRan')
+    print(girls)
+
+
+def ListChangeTest():
+    """List修改测试"""
+    girls = ["A"]
+    girls[0] = "AAA"
+    print(girls)
+
+    fruit = ["Apple", "香蕉", "Bear"]
+
+    for i in range(len(fruit)):
+        if fruit[i] == "香蕉":
+            fruit[i] = "banana"
+            break
+    print(fruit)
+
+
+def ListDeleteElementTest():
+    fruit = ['Apple', 'Bear', 'Other', 'Cat', 'Dog']
+
+    del fruit[0]
+    print(fruit)
+    fruit.remove(fruit[0])
+    print(fruit)
+    fruit.pop(0)
+    print(fruit)
+
+
+
 if __name__ == '__main__':
+    ListDeleteElementTest()
+    # ListChangeTest()
+    # ListInsertTest()
+    # ListExtendsTest()
+    # ListAppendTest()
+    # ListElementCheckTest()
     # SliceTest()
-    ListAddListTest()
+    # ListAddListTest()
