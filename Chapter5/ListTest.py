@@ -47,21 +47,21 @@ def ListElementCheckTest():
 
 def ListAppendTest():
     girls = ['杨超越']
-    girls.append('李冰燕')
+    girls.append('')
     print(girls)
 
 
 def ListExtendsTest():
     """List相加"""
     girls = ['杨超越']
-    girls2 = ['李冰燕']
+    girls2 = ['']
     girls3 = girls + girls2
     print(girls3)
 
 
 def ListInsertTest():
     """List插入测试"""
-    girls = ['李冰燕']
+    girls = ['']
     girls.insert(0, 'XuanRan')
     print(girls)
 
