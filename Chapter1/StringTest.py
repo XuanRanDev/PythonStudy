@@ -10,5 +10,11 @@ def showStringSplieTest():
     print('e' not in s2)
 
 
+def showStringJoinMethodTest():
+    s = "Hello"
+    print("-".join(s))
+
+
 if __name__ == '__main__':
-    showStringSplieTest()
+    showStringJoinMethodTest()
+    # showStringSplieTest()
