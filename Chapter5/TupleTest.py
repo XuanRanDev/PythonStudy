@@ -31,9 +31,16 @@ def ChangeTupleTest():
     print(type(tu))
 
 
+def TupleShowElementTest():
+    # 元组数据获取示例
+    tu = ("a", "b", "c", "d")
+    print(tu[1:2])
+    print(tu[::1])
+
 
 if __name__ == '__main__':
     """元组Test"""
+    TupleShowElementTest()
     # ChangeTupleTest()
     # HasATupleTest()
     # addNewTuple()
