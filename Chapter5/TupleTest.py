@@ -44,9 +44,32 @@ def TupleElementChangedTest():
     print(("A", "Q") * 4)
 
 
+def TupleMethodTest():
+    """元组相关方法测试"""
+    f = ()
+    v = []
+
+    for i in range(10):
+        if i not in v:
+            v.append(random.randint(10, 20))
+    f = tuple(v)
+    print("最大值" + str(max(f)))
+    print("最小值" + repr(min(f)))
+    print("和" + str(sum(f)))
+    print(len(f))
+
+    # 统计元组中10的个数
+    print("元组中10的个数为:" + str(f.count(10)))
+
+    print("元组中有10吗：" + str(10 in f ))
+
+
+
+
 if __name__ == '__main__':
     """元组Test"""
-    TupleElementChangedTest()
+    TupleMethodTest()
+    # TupleElementChangedTest()
     # TupleShowElementTest()
     # ChangeTupleTest()
     # HasATupleTest()
