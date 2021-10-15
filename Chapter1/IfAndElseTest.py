@@ -9,4 +9,3 @@ if __name__ == '__main__':
         print("你成年一年了！")
     else:
         print("你已经不是小孩子了！")
-
