@@ -38,9 +38,16 @@ def TupleShowElementTest():
     print(tu[::1])
 
 
+def TupleElementChangedTest():
+    v = ("a", "c")
+    print(v * 3)
+    print(("A", "Q") * 4)
+
+
 if __name__ == '__main__':
     """元组Test"""
-    TupleShowElementTest()
+    TupleElementChangedTest()
+    # TupleShowElementTest()
     # ChangeTupleTest()
     # HasATupleTest()
     # addNewTuple()
