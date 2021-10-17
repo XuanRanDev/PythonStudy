@@ -20,7 +20,6 @@ def ZhongZiRandomTest():
     b = random.randint(1, 10)
     print(b)
 
-
 if __name__ == '__main__':
     """随机数Random测试"""
     ZhongZiRandomTest()
