@@ -5,5 +5,6 @@ def startMultipolicationTableTest():
             print(repr(j) + "*" + repr(i) + " = " + repr(i * j) + "\t", end='')
         print("\n")
 
+
 if __name__ == '__main__':
     startMultipolicationTableTest()
