@@ -3,7 +3,6 @@ def startMultipolicationTableTest():
 
         for j in range(1, i + 1):
             print(repr(j) + "*" + repr(i) + " = " + repr(i * j) + "\t", end='')
-
         print("\n")
 
 
