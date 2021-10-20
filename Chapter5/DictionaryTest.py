@@ -19,7 +19,15 @@ def DictChangeTest():
     print(dict1['age'])
 
 
+def DictItemTest():
+    """Dictionary Item Method test"""
+    dict1 = {'name': 'XuanRan', 'age': 19}
+    print(dict1.items())
+
+
+
 if __name__ == '__main__':
-    DictChangeTest()
+    DictItemTest()
+    # DictChangeTest()
     # ListToDictTest()
     # Dict1Test()
