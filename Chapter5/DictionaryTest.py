@@ -65,8 +65,20 @@ def DictKeyandValueTest():
     print("avg is " + repr(avg))
 
 
+def DictGetData():
+    """Dict get data test"""
+    dict1 = {
+        'A': 1,
+        'B': 2,
+        'C': 3,
+    }
+
+    print(dict1.get('A'))
+
+
 if __name__ == '__main__':
-    DictKeyandValueTest()
+    DictGetData()
+    # DictKeyandValueTest()
     # DictValueTest()
     # DictKeySetTest()
     # DictItemTest()
