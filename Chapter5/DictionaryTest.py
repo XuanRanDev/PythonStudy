@@ -42,8 +42,23 @@ def DictValueTest():
     print(dict1.values())
 
 
+def DictKeyandValueTest():
+    """Dict key and value test"""
+    dict1 = {
+        'A': 166,
+        'B': 133,
+        'C': 242
+    }
+
+    for key, value in dict1.items():
+        if value >= 160:
+            print(key)
+
+
+
 if __name__ == '__main__':
-    DictValueTest()
+    DictKeyandValueTest()
+    # DictValueTest()
     # DictKeySetTest()
     # DictItemTest()
     # DictChangeTest()
