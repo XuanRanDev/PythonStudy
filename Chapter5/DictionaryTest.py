@@ -1,6 +1,6 @@
 def Dict1Test():
     dict1 = {}
-    dict2 = {'name': 'XuanRan', 'age': 19, 'sex': '男' }
+    dict2 = {'name': 'XuanRan', 'age': 19, 'sex': '男'}
     print(dict2['name'])
 
 
@@ -54,6 +54,15 @@ def DictKeyandValueTest():
         if value >= 160:
             print(key)
 
+    print("All value is :")
+    values = dict1.values()
+    print(values)
+
+    heights = sum(dict1.values())
+    print('总身高为：' + repr(heights))
+
+    avg = heights/dict1.__len__()
+    print("avg is " + repr(avg))
 
 
 if __name__ == '__main__':
