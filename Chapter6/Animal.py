@@ -1,6 +1,10 @@
 class Animal:
 
     def __init__(self, name):
+        """
+            init 是一个构造函数
+            类的所有方法第一个参数必须为self
+        """
         self.name = name
 
     def eat(self):
