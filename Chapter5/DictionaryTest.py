@@ -75,9 +75,31 @@ def DictGetData():
 
     print(dict1.get('A'))
 
+    """参数二为如果找不到数据，返回的默认值"""
+    print(dict1.get('D', 200))
+
+
+def DictDelElementTest():
+    """字典元素删除测试"""
+    dict1 = {
+        'A': 19,
+        'B': 20,
+        'C': 23,
+    }
+    print('Dict delete before:', dict1)
+    del dict1['A']
+    print('Dict delete after:', dict1)
+
+    print('Dict prepare pop before', dict1)
+    r = dict1.pop('A')  # have any issue.
+    print(r)
+    print(dict1)
+
+
 
 if __name__ == '__main__':
-    DictGetData()
+    DictDelElementTest()
+    # DictGetData()
     # DictKeyandValueTest()
     # DictValueTest()
     # DictKeySetTest()
