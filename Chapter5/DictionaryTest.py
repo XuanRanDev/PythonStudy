@@ -25,9 +25,15 @@ def DictItemTest():
     print(dict1.items())
 
 
+def DictKeySetTest():
+    """Dict Key method test"""
+    dict1 = {'name': 'XuanRan', 'age': 19}
+    print(dict1.keys())
+
 
 if __name__ == '__main__':
-    DictItemTest()
+    DictKeySetTest()
+    # DictItemTest()
     # DictChangeTest()
     # ListToDictTest()
     # Dict1Test()
