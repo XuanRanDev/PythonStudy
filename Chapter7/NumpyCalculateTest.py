@@ -36,8 +36,19 @@ def JuZhenJiSuanTest():
     print("求矩阵最小值下标:" + repr(arr3.argmin()))
 
 
+def JuZhenZhuanZhiTest():
+    """矩阵转置测试"""
+    arr3 = np.array([[1, 2, 3], [4, 5, 6]])
+    arr3_tran = arr3.transpose()
+    print(arr3_tran)
+
+    # 扁平化操作
+    print("准备扁平化操作：")
+    print(arr3_tran.flatten())
+
 
 if __name__ == '__main__':
+    JuZhenZhuanZhiTest()
     # JuZhenJiSuanTest()
     # JuZhenChengFaTest()
     # Test()
