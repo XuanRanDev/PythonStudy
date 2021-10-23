@@ -1,5 +1,5 @@
 from PIL import Image
-import matplotlib.pyplot as plt
+
 
 img = Image.open("E:\PycharmProjects\PythonStudy\FileTest\lk2.png")
 
@@ -53,7 +53,7 @@ def PILTransposeTest():
 
 
 if __name__ == '__main__':
-    PILTransposeTest()
+    # PILTransposeTest()
     # PILResizeTest()
     # PILCropTest()
     # PLPFanZhuanTest()
