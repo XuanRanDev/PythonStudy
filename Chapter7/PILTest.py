@@ -1,8 +1,10 @@
 from PIL import Image
 import matplotlib.pyplot as plt
 
+img = Image.open("E:\PycharmProjects\PythonStudy\FileTest\lk2.png")
+
+
 def PILBaseTest():
-    img = Image.open("E:\PycharmProjects\PythonStudy\FileTest\lk2.png")
     # 调用系统去显示图像（仅限Windows)
     # img.show()
     # plt.imshow(img)
@@ -16,6 +18,22 @@ def PILBaseTest():
     print(width, height)
 
 
+def PLPFanZhuanTest():
+    """图像反转测试"""
+    img_rotate = img.rotate(45)
+    img_rotate.show()
+
+
+def PILCropTest():
+    """PIL图像裁剪测试"""
+    # TODO 测试未通过
+    # 参数：左上角x 左上角y 右下角x 右下角y
+    img_r = img.crop((900, 500, 600, 366))
+    img_r.show()
+
 
 if __name__ == '__main__':
-    PILBaseTest()
+
+    # PILCropTest()
+    # PLPFanZhuanTest()
+    # PILBaseTest()
