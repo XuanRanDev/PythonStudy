@@ -15,8 +15,8 @@ def Test():
 def JuZhenChengFaTest():
     """矩阵乘法测试"""
 
-    arr3 = np.array([[1,2,3],[4,5,6]])
-    arr4 = np.ones([3,2],dtype='int64')
+    arr3 = np.array([[1, 2, 3], [4, 5, 6]])
+    arr4 = np.ones([3, 2], dtype='int64')
 
     print(arr3)
     print(arr4)
