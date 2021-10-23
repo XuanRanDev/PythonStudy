@@ -32,8 +32,16 @@ def PILCropTest():
     img_r.show()
 
 
-if __name__ == '__main__':
+def PILResizeTest():
+    """图像缩放测试"""
+    widght,height = img.size
+    img2 = img.resize(((int(widght * 0.5)),(int(height*0.5))), 0)
+    img2.show()
+    img2.save("E:\PycharmProjects\PythonStudy\FileTest\lk2_resize.png")
 
+
+if __name__ == '__main__':
+    PILResizeTest()
     # PILCropTest()
     # PLPFanZhuanTest()
     # PILBaseTest()
