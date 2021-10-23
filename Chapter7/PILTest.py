@@ -53,7 +53,7 @@ def PILTransposeTest():
 
 
 if __name__ == '__main__':
-    # PILTransposeTest()
+    PILTransposeTest()
     # PILResizeTest()
     # PILCropTest()
     # PLPFanZhuanTest()
