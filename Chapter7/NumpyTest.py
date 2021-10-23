@@ -31,8 +31,26 @@ def emptyNumpyTest():
     print(empty)
 
 
+def NumpyMethodTest():
+    array = np.array([[1, 2, 3, 4], [5, 6, 7, 8]])
+    print(array)
+
+    # 输出数组维度
+    print("数组维度为：",array.ndim)
+
+    # 输出数组形状
+    print("数组形状是" + repr(array.shape))
+
+    # 输出数组元素个数
+    print("数组元素个数为:"  + repr(array.size))
+
+    # 输出数组元素类型
+    print("数组元素类型为：" + repr(array.dtype))
+
+
 if __name__ == '__main__':
-    emptyNumpyTest()
+    NumpyMethodTest()
+    # emptyNumpyTest()
     # oneNumpyTest()
     # zeroNumpyTest()
     # NumpyTest()
