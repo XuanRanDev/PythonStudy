@@ -40,8 +40,21 @@ def PILResizeTest():
     img2.save("E:\PycharmProjects\PythonStudy\FileTest\lk2_resize.png")
 
 
+def PILTransposeTest():
+    """图像反转测试"""
+    # 实现图像左右反转
+    img_tr1 = img.transpose(Image.FLIP_LEFT_RIGHT)
+    img_tr1.show()
+
+    # 实现图像上下反转
+    img_tr2 = img.transpose(Image.FLIP_TOP_BOTTOM)
+    img_tr2.show()
+
+
+
 if __name__ == '__main__':
-    PILResizeTest()
+    PILTransposeTest()
+    # PILResizeTest()
     # PILCropTest()
     # PLPFanZhuanTest()
     # PILBaseTest()
