@@ -48,8 +48,20 @@ def NumpyMethodTest():
     print("数组元素类型为：" + repr(array.dtype))
 
 
+def ChangeNumpyShapeTest():
+    """数组形状改变测试"""
+    array = np.arange(6)
+    print(array)
+
+    print("数组准备改变")
+    array = array.reshape([2, 3])
+    print(array)
+
+
+
 if __name__ == '__main__':
-    NumpyMethodTest()
+    ChangeNumpyShapeTest()
+    # NumpyMethodTest()
     # emptyNumpyTest()
     # oneNumpyTest()
     # zeroNumpyTest()
