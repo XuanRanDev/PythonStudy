@@ -16,6 +16,12 @@ def zeroNumpyTest():
     print(zero_array)
 
 
+def oneNumpyTest():
+    one = np.ones([3,2],dtype='int64')
+    print(one)
+
+
 if __name__ == '__main__':
-    zeroNumpyTest()
+    oneNumpyTest()
+    # zeroNumpyTest()
     # NumpyTest()
