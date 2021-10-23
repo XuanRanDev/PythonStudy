@@ -11,5 +11,11 @@ def NumpyTest():
     print(array)
 
 
+def zeroNumpyTest():
+    zero_array = np.zeros([3, 4])
+    print(zero_array)
+
+
 if __name__ == '__main__':
-    NumpyTest()
+    zeroNumpyTest()
+    # NumpyTest()
