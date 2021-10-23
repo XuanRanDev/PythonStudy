@@ -26,6 +26,12 @@ def SeriesGetIndexTest():
     print("索引：" + repr(s.index))
 
 
+def SeriesgetValueTest():
+    """Series get value test"""
+    s = pd.Series(['a', 'b', 'c'], index=[100, 200, 100])
+    print("Values: " + repr(s.values))
+
+
 if __name__ == '__main__':
     SeriesgetValueTest()
     # SeriesGetIndexTest()
