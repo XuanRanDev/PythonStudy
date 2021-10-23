@@ -20,7 +20,15 @@ def SeriesFromDiect():
     print(s)
 
 
+def SeriesGetIndexTest():
+    """Series get Index test"""
+    s = pd.Series(['a', 'b', 'c'], index=[100, 200, 100])
+    print("索引：" + repr(s.index))
+
+
 if __name__ == '__main__':
-    SeriesFromDiect()
+    SeriesgetValueTest()
+    # SeriesGetIndexTest()
+    # SeriesFromDiect()
     # SeriesIndexTest()
     # SeriesBaseTest()
