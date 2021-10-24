@@ -7,7 +7,6 @@ def MatplotlibBaseTest():
     plt.plot(x, y)
     plt.show()
 
-
 def FigureTest():
     """Figure画布测试"""
     x = np.linspace(-1, 1, 50)
