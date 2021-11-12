@@ -1,7 +1,7 @@
 def main(filename):
     if '.' not in filename:
         return "null"
-    pos = filename.rfind('.') # 从右边开始查找
+    pos = filename.rfind('.')  # 从右边开始查找
     return filename[pos + 1:]
 
 
