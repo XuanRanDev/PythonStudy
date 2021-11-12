@@ -14,3 +14,9 @@ class PublicAndPrivateTest:
     def __bar(self):
         print(self.__foo)
         print("__bar")
+
+
+if __name__ == '__main__':
+    t = PublicAndPrivateTest("AAA")
+    # t.PublicAndPrivateTest__bar()
+    print(t.__PublicAndPrivateTest__foo)
